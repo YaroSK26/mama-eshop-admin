@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,45 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+table.basic {
+  @apply flex flex-col bg-white rounded-sm shadow-md  my-16;
+}
+
+table.basic thead tr td {
+  @apply text-base text-gray-600 uppercase border-b border-gray-300 px-4 py-2 text-center;
+}
+
+table.basic tbody tr td {
+  margin-left: 33rem
+}
+
+.primary-absolute{
+  @apply bg-green-600 text-white px-4 py-2 rounded-md   mt-2 absolute left-96
+}
+.primary{
+  @apply bg-green-600 text-white px-4 py-2 rounded-md   mt-2 w-20
+}
+.primary-yes{
+  @apply bg-green-600 text-white px-4 py-2 rounded-md   mt-2 w-20
+}
+.primary-no{
+  @apply bg-gray-600 text-white px-4 py-2 rounded-md   mt-2 w-20
+}
+
+.edit {
+  @apply bg-green-600 text-white rounded-md flex items-center py-1 my-1 px-3
+  
+}
+
+.delete{
+  @apply bg-red-500 text-white rounded-md flex items-center py-1 px-2 my-1
+}
+
+input{
+ @apply border border-gray-200 rounded-sm px-2  py-2 w-full resize-none;
+  @apply mb-2;
+  @apply shadow-sm;
 }
